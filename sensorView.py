@@ -81,10 +81,6 @@ def getColour():
     else:
         return colourValue
 
-def corrRobot(corrVelocity) :
-    
-
-
 def printSensorValues():
     print("----------distance sensor----------")
     for k in range(5):
@@ -101,5 +97,4 @@ def printSensorValues():
     print(getColour())
 
 while robot.step(timeStep) != -1:
-    corrRobot(1.0)
     printSensorValues()    
